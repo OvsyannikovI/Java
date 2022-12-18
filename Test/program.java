@@ -1,9 +1,10 @@
+import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 import java.time.LocalTime;
 
 public class program {
-    public static void main(String[] args) throws Exception {
+    // public static void main(String[] args) throws Exception {
         // int nowTime = LocalTime.now().getHour();
         // // System.out.println(nowTime);
         // System.out.println("Input name");
@@ -59,5 +60,22 @@ public class program {
         //     System.out.print(i + " ");
         // }
         
+    public static void main(String args[]) {
+        Random rnd = new Random();
+        ArrayList<Integer>  intArray = new ArrayList<>();
+        for (int i = 0; i < 10; i++) {
+            intArray.add(rnd.nextInt(100));
+        }
+        printArray(intArray);
     }
+
+    public static void printArray (ArrayList<Integer> array) {
+        StringBuilder printStr = new StringBuilder();
+        for (Integer number: array) {
+            System.out.print(number + ", ");
+        }
+        String output = printStr.substring(0, printStr.length() - 2);
+        System.out.println((output));
+    }
+
 }
