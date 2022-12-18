@@ -1,6 +1,10 @@
+import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.Deque;
+import java.util.LinkedList;
 import java.util.Random;
 import java.util.Scanner;
+import java.time.Duration;
 import java.time.LocalTime;
 
 public class program {
@@ -60,22 +64,48 @@ public class program {
         //     System.out.print(i + " ");
         // }
         
+    /**
+     * @param args
+     */
     public static void main(String args[]) {
-        Random rnd = new Random();
-        ArrayList<Integer>  intArray = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
-            intArray.add(rnd.nextInt(100));
-        }
-        printArray(intArray);
-    }
+        // Random rnd = new Random();
+        // ArrayList<Integer>  intArray = new ArrayList<>();
+        // for (int i = 0; i < 10; i++) {
+        //     intArray.add(rnd.nextInt(100));
+        // }
+        // printArray(intArray);
+    //     Deque<Integer> dq = new ArrayDeque<>();
+    //     LinkedList<Integer> ll = new LinkedList<>();
+    //     LocalTime timeStart = LocalTime.now();
+        
+    //     for (int i = 0; i < 1000000; i++) {
+    //         dq.add(i);
+    //     } 
+        
+        
+    //     LocalTime timeStop = LocalTime.now();
+    //     Duration dif = Duration.between(timeStart, timeStop);
+    //     System.out.println("dq: " + dif);
+    //     timeStart = LocalTime.now();
+    //     for (int i = 0; i < 1000000; i++) {
+    //         ll.add(i);
+    //     }
+    //     timeStop = LocalTime.now();
+    //     Duration diff = Duration.between(timeStart, timeStop);
+    //     System.out.println("ll: " + diff);
 
-    public static void printArray (ArrayList<Integer> array) {
-        StringBuilder printStr = new StringBuilder();
-        for (Integer number: array) {
-            System.out.print(number + ", ");
-        }
-        String output = printStr.substring(0, printStr.length() - 2);
-        System.out.println((output));
-    }
+    // }
+
+    // public static void printArray (ArrayList<Integer> array) {
+    //     StringBuilder printStr = new StringBuilder();
+    //     for (Integer number: array) {
+    //         System.out.print(number + ", ");
+    //     }
+    //     String output = printStr.substring(0, printStr.length() - 2);
+    //     System.out.println((output));
+    //
+    
+
+}
 
 }
